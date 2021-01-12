@@ -8,7 +8,7 @@ import AddTask from './AddTask';
 // import Fetching from './Fetching'
 
 const initialData = {
-    tasks =[
+    tasks: [
         { id: 'jsertu7a', name: 'Ranger la vaisselle', completed: false },
         { id: 'jseruo7l', name: 'Répondre appel d\'offres', completed: false },
         { id: 'jseruy2q', name: 'Signer contrat', completed: false },
@@ -17,6 +17,7 @@ const initialData = {
 };
 
 const TaskData = React.createContext();
+export const TaskConsumer = TaskData.Consumer;
 
 class App extends React.Component {
 
